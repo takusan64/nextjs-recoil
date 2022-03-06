@@ -22,8 +22,8 @@ export default function Home() {
     <div>
       <p>todo list</p>
       <ul>
-        {todoList.length && todoList.map((v) => (
-          <li>{v}</li>
+        {todoList.length && todoList.map((v, i) => (
+          <li key={i}>{v}</li>
         ))}
       </ul>
       <div>

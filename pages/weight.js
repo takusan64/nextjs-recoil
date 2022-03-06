@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useRecoilState, useRecoilValue } from "recoil";
 import { weightState, weightUnitState } from "../recoil/atom"
 
-export default function Home() {
+export default function Weight() {
   // 体重のAtomを呼び出し
   const weightAtom = useRecoilValue(weightState)
   // Selectorを呼び出し
