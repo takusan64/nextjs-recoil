@@ -1,13 +1,12 @@
 import { useState } from "react"
 import { useRecoilState, useRecoilValue } from "recoil";
-import { weightState, weightUnitState } from "../recoil/atom"
+import { weightState, weightUnitState } from "../recoil/weight"
 
 export default function Weight() {
   // 体重のAtomを呼び出し
   const weightAtom = useRecoilValue(weightState)
   // Selectorを呼び出し
   const [weightSelector, setWeightSelector] = useRecoilState(weightUnitState)
-
   
   const [weight, setWeight] = useState(0)
 

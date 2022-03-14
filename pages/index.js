@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useRecoilState } from "recoil";
-import { todoState } from "../recoil/atom"
+import { todoState } from "../recoil/todo"
 
 export default function Home() {
   // TodoのAtomを呼び出し

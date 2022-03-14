@@ -1,11 +1,11 @@
 import { useRecoilValueLoadable } from "recoil";
-import { qiitaListState } from "../recoil/atom"
+import { qiitaListState } from "../recoil/qiita"
 
 export default function Qiita() {
-  // Pet Listを呼び出し
-  // React.Suspenseの代用
+  // Qiita記事情報を呼び出し
   const qiitaList = useRecoilValueLoadable(qiitaListState)
 
+  // fetchの状態によって分岐
   switch (qiitaList.state) {
     case "hasError":
       throw qiitaList.contents;
