@@ -1,4 +1,4 @@
-import {RecoilRoot} from 'recoil';
+import { RecoilRoot } from 'recoil';
 
 function MyApp({ Component, pageProps }) {
   return (
